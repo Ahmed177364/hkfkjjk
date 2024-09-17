@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>برمجلي</title>
+          <link rel="stylesheet" href="style.css">
+          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+          <div class="header">
+                    <div class="logo">برمجلي</div>
+                    <div class="siderighttext">
+                              <a id="hk">الاسعار</a>
+                              <a id="kk">الخدمات</a>
+                              <a id="kl">الرئيسية</a>
+                              <button class="created">ابدأ الان</button>
+                    </div>
+          </div>
+ <div class="speac"></div>
+          <div class="continer">
+                    <div class="sidetext">
+                              <h1>مرحبا بك في برمجلي</h1>
+                              <h4 style="color: rgba(0, 0, 0, 0.658);">انت الان علي وشك انشاء موقعك الخاص<br>لنشر اعمالك وتجارتك اونلاين</h4>
+                              <button class="condlm">ابدأ الان</button>
+                    </div>
+                    <div class="sidephoto"></div>
+          </div>
+          <div class="side2continer">
+                    <div class="sidetextside2continer">
+                              <h1 style="text-align: center;">الخدمات</h1>
+                              <h4 style="text-align: center; line-height:0px; color:rgba(0, 0, 0, 0.418);">الخدمات مع برمجلي تختلف تماما عن اي خدمات اخري</h4>
+                              <div class="divline"></div>
+                    </div>
+                    <div class="sidedivside2continer">
+                    <div class="divserves">
+                              <img src="image/icons1.svg" alt="icons">
+                              <h2>تحقيق اهدافك معنا</h2>
+                    </div>
+                    <div class="divserves">
+                              <img src="image/icons2.svg" alt="icons">
+                              <h2>أقل وقت انشاء لموقع</h2>
+                    </div>
+                    <div class="divserves">
+                              <img src="image/icons3.svg" alt="icons">
+                              <h2>تحقيق الثقة التي تتمناها</h2>
+                    </div>
+          </div>
+          </div>
+          <div class="side3continer">
+                    <div class="divssideleft4divs">
+                              <div class="divvcn"><img src="image/img1.svg"></div>
+                              <div class="divvcn"><img src="image/img2.svg"></div>
+                              <div class="divvcn"><img src="image/img3.svg"></div>
+                              <div class="divvcn"><img src="image/img4.svg"></div>
+                    </div>
+                    <div class="sidetextright">
+                              <h1>لماذا اقوم بانشاء موقع؟</h1>
+                              <h3>لان الموقع هو الواجهة لتجارتك ومشروعك اونلاين الموقع يجعلك <br>تصل لعدد زوار اكثر بكثير من ارض الواقع</h3>
+                    </div>
+          </div>
+          <div class="side4continer">
+                              <div class="sidetextside4continer">
+                                        <h1 style="text-align: center;">الاسعار</h1>
+                                        <h4 style="text-align: center; line-height:0px; color:rgba(0, 0, 0, 0.418);">تلك افضل اسعار لانشاء مواقع علي الانترنت</h4>
+                                        <div class="divline"></div>
+                              </div>
+                              <div class="sidedivside4continer">
+                              <div class="divserves1">
+                                        <h1>عادية</h1>
+                                        <h2>2000 جنية</h2>
+                                        <button id="nm">اشترك الان</button>
+                              </div>
+                              <div class="divserves1">
+                                        <h1>متقدمة</h1>
+                                        <h2>3500 جنية</h2>
+                                        <button id="nn">اشترك الان</button>
+
+                              </div>
+                              <div class="divserves1">
+                                        <h1>فائقة</h1>
+                                        <h2>4500 جنية</h2>
+                                        <button id="np">اشترك الان</button>
+
+                              </div>
+                    </div>
+          </div>
+
+          <div class="divend">
+                    @Copyright:2024
+          </div>
+       
+         <script>
+          
+          const buttonp = document.querySelector('.created');
+          const button = document.querySelector('.condlm');
+          const klll = document.getElementById('kl');
+          const kllll = document.getElementById('hk');
+          const klllll = document.getElementById('kk');
+          const section = document.querySelector('.side4continer');
+          const section_2 = document.querySelector('.speac');
+          const section_3 = document.querySelector('.side2continer');
+
+          
+          button.addEventListener('click', () => {
+            section.scrollIntoView({ behavior: 'smooth' });});
+            buttonp.addEventListener('click', () => {
+                    section.scrollIntoView({ behavior: 'smooth' });});
+                    kllll.addEventListener('click', () => {
+                              section.scrollIntoView({ behavior: 'smooth' });
+                    });
+                    klll.addEventListener('click', () => {
+                              section_2.scrollIntoView({ behavior: 'smooth' });
+                    });
+                    klllll.addEventListener('click', () => {
+                              section_3.scrollIntoView({ behavior: 'smooth' });
+                    });
+          
+            
+                    
+
+    const klh = document.getElementById('nm');
+    const klk = document.getElementById('nn');
+    const klp = document.getElementById('np');
+    klh.addEventListener('click', () => {
+      const phoneNumber = "201212687936";
+      const message = "انا اود الاشتراك في احد الخدمات التي تم عرضها علي موقع برمجلي ما التفاصيل"; // الرسالة التي تريد إرسالها
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    });          
+    klk.addEventListener('click', () => {
+          const phoneNumber = "201212687936";
+          const message = "انا اود الاشتراك في احد الخدمات التي تم عرضها علي موقع برمجلي ما التفاصيل"; // الرسالة التي تريد إرسالها
+          const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+          window.open(whatsappURL, '_blank');
+        });     
+        klp.addEventListener('click', () => {
+          const phoneNumber = "201212687936";
+          const message = "انا اود الاشتراك في احد الخدمات التي تم عرضها علي موقع برمجلي ما التفاصيل"; // الرسالة التي تريد إرسالها
+          const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+          window.open(whatsappURL, '_blank');
+        });                   
+        </script>
+</body>
+</html>
